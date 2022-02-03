@@ -1,31 +1,1002 @@
 [
     {
-        "id":"0",
-        "make":"VW",
-        "model":"Golf",
-        "year":"2019",
-        "style":"sedan",
-        "img":"./img1.jpeg"
-
+        "id": 0,
+        "name": "Porsche",
+        "model": "Alto",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "19.15",
+        "pd": "51.85",
+        "pl": "596.61"
     },
     {
-        "id":"0",
-        "make":"Porsche",
-        "model":"Cayenne",
-        "year":"2020",
-        "style":"SUV",
-        "img":"./img2.jpeg"
-
+        "id": 1,
+        "name": "Dodge",
+        "model": "Splash",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/1335077/pexels-photo-1335077.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "15.63",
+        "pd": "94.74",
+        "pl": "621.58"
     },
     {
-        "id":"0",
-        "make":"Mercedes",
-        "model":"E320",
-        "year":"2008",
-        "style":"sedan",
-        "img":"./img3.jpeg"
-
+        "id": 2,
+        "name": "Porsche",
+        "model": "Liana",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "22.41",
+        "pd": "84.60",
+        "pl": "654.12"
+    },
+    {
+        "id": 3,
+        "name": "Jeep",
+        "model": "Kizashi",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "16.68",
+        "pd": "98.95",
+        "pl": "524.74"
+    },
+    {
+        "id": 4,
+        "name": "Lamborghini",
+        "model": "Celerio",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/1007410/pexels-photo-1007410.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "25.80",
+        "pd": "85.60",
+        "pl": "537.44"
+    },
+    {
+        "id": 5,
+        "name": "Daewoo",
+        "model": "Vitara",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "12.14",
+        "pd": "75.50",
+        "pl": "521.49"
+    },
+    {
+        "id": 6,
+        "name": "Cadillac",
+        "model": "Celerio",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/810357/pexels-photo-810357.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "21.43",
+        "pd": "77.14",
+        "pl": "617.14"
+    },
+    {
+        "id": 7,
+        "name": "Citroën",
+        "model": "Ignis",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/1335077/pexels-photo-1335077.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "18.16",
+        "pd": "86.59",
+        "pl": "544.04"
+    },
+    {
+        "id": 8,
+        "name": "Bugatti",
+        "model": "Alto",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "29.47",
+        "pd": "85.99",
+        "pl": "542.78"
+    },
+    {
+        "id": 9,
+        "name": "Jaguar",
+        "model": "Swace",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/2920064/pexels-photo-2920064.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "14.12",
+        "pd": "57.68",
+        "pl": "691.47"
+    },
+    {
+        "id": 10,
+        "name": "Abarth",
+        "model": "Across",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "12.91",
+        "pd": "96.45",
+        "pl": "611.51"
+    },
+    {
+        "id": 11,
+        "name": "Cupra",
+        "model": "Samurai",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/100656/pexels-photo-100656.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "10.93",
+        "pd": "65.67",
+        "pl": "526.62"
+    },
+    {
+        "id": 12,
+        "name": "Honda",
+        "model": "Ignis",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "15.61",
+        "pd": "95.08",
+        "pl": "634.83"
+    },
+    {
+        "id": 13,
+        "name": "Lancia",
+        "model": "Carry",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/100656/pexels-photo-100656.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "29.77",
+        "pd": "70.14",
+        "pl": "524.18"
+    },
+    {
+        "id": 14,
+        "name": "Rover",
+        "model": "Alto",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/1429775/pexels-photo-1429775.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "18.52",
+        "pd": "92.04",
+        "pl": "670.07"
+    },
+    {
+        "id": 15,
+        "name": "Cupra",
+        "model": "Kizashi",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/38637/car-audi-auto-automotive-38637.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "20.22",
+        "pd": "55.65",
+        "pl": "675.24"
+    },
+    {
+        "id": 16,
+        "name": "Mazda",
+        "model": "iK-2",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/1007410/pexels-photo-1007410.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "11.06",
+        "pd": "71.62",
+        "pl": "691.53"
+    },
+    {
+        "id": 17,
+        "name": "Aixam",
+        "model": "Kizashi",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "25.49",
+        "pd": "83.87",
+        "pl": "532.17"
+    },
+    {
+        "id": 18,
+        "name": "Acura",
+        "model": "Liana",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "21.56",
+        "pd": "73.19",
+        "pl": "560.88"
+    },
+    {
+        "id": 19,
+        "name": "Nissan",
+        "model": "Baleno",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/2920064/pexels-photo-2920064.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "14.19",
+        "pd": "73.10",
+        "pl": "626.77"
+    },
+    {
+        "id": 20,
+        "name": "Maserati",
+        "model": "Swift",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "25.43",
+        "pd": "67.15",
+        "pl": "537.85"
+    },
+    {
+        "id": 21,
+        "name": "Bentley",
+        "model": "Celerio",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "24.93",
+        "pd": "60.44",
+        "pl": "537.22"
+    },
+    {
+        "id": 22,
+        "name": "Jaguar",
+        "model": "Celerio",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "29.32",
+        "pd": "74.77",
+        "pl": "666.33"
+    },
+    {
+        "id": 23,
+        "name": "Rover",
+        "model": "Alto",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/100656/pexels-photo-100656.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "19.28",
+        "pd": "60.74",
+        "pl": "611.55"
+    },
+    {
+        "id": 24,
+        "name": "Citroën",
+        "model": "Super-Carry",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "20.83",
+        "pd": "92.12",
+        "pl": "589.58"
+    },
+    {
+        "id": 25,
+        "name": "Ferrari",
+        "model": "Jimny",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "12.16",
+        "pd": "99.98",
+        "pl": "622.67"
+    },
+    {
+        "id": 26,
+        "name": "Infiniti",
+        "model": "Liana",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "14.07",
+        "pd": "90.30",
+        "pl": "643.91"
+    },
+    {
+        "id": 27,
+        "name": "Cadillac",
+        "model": "Liana",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/100656/pexels-photo-100656.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "15.70",
+        "pd": "69.99",
+        "pl": "687.80"
+    },
+    {
+        "id": 28,
+        "name": "Artega",
+        "model": "Swift",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "25.11",
+        "pd": "76.02",
+        "pl": "536.88"
+    },
+    {
+        "id": 29,
+        "name": "Ferrari",
+        "model": "Swace",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/1007410/pexels-photo-1007410.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "20.48",
+        "pd": "98.49",
+        "pl": "678.62"
+    },
+    {
+        "id": 30,
+        "name": "Bentley",
+        "model": "LJ",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "14.24",
+        "pd": "50.75",
+        "pl": "615.20"
+    },
+    {
+        "id": 31,
+        "name": "Mercedes-Benz",
+        "model": "Ignis",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "27.33",
+        "pd": "87.63",
+        "pl": "660.06"
+    },
+    {
+        "id": 32,
+        "name": "Cobra",
+        "model": "Alto",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "22.09",
+        "pd": "70.03",
+        "pl": "599.63"
+    },
+    {
+        "id": 33,
+        "name": "Lada",
+        "model": "Across",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "28.64",
+        "pd": "95.27",
+        "pl": "621.12"
+    },
+    {
+        "id": 34,
+        "name": "Ferrari",
+        "model": "LJ",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "26.82",
+        "pd": "99.02",
+        "pl": "574.39"
+    },
+    {
+        "id": 35,
+        "name": "Jeep",
+        "model": "Swace",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "19.68",
+        "pd": "68.76",
+        "pl": "511.61"
+    },
+    {
+        "id": 36,
+        "name": "Cobra",
+        "model": "iK-2",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "11.71",
+        "pd": "67.67",
+        "pl": "526.78"
+    },
+    {
+        "id": 37,
+        "name": "Audi",
+        "model": "Liana",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "25.19",
+        "pd": "60.56",
+        "pl": "579.80"
+    },
+    {
+        "id": 38,
+        "name": "Kia",
+        "model": "iK-2",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/38637/car-audi-auto-automotive-38637.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "14.04",
+        "pd": "86.53",
+        "pl": "584.87"
+    },
+    {
+        "id": 39,
+        "name": "Kia",
+        "model": "Kizashi",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "15.94",
+        "pd": "50.53",
+        "pl": "698.65"
+    },
+    {
+        "id": 40,
+        "name": "Aixam",
+        "model": "iK-2",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "16.97",
+        "pd": "88.52",
+        "pl": "551.04"
+    },
+    {
+        "id": 41,
+        "name": "Bentley",
+        "model": "Across",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/1035108/pexels-photo-1035108.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "13.43",
+        "pd": "90.84",
+        "pl": "616.36"
+    },
+    {
+        "id": 42,
+        "name": "Rover",
+        "model": "Ignis",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "24.04",
+        "pd": "82.54",
+        "pl": "643.58"
+    },
+    {
+        "id": 43,
+        "name": "Mazda",
+        "model": "LJ",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "12.90",
+        "pd": "81.83",
+        "pl": "651.75"
+    },
+    {
+        "id": 44,
+        "name": "Ferrari",
+        "model": "Swift",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/38637/car-audi-auto-automotive-38637.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "21.09",
+        "pd": "94.95",
+        "pl": "508.13"
+    },
+    {
+        "id": 45,
+        "name": "Lada",
+        "model": "SJ",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/241316/pexels-photo-241316.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "17.96",
+        "pd": "90.05",
+        "pl": "686.72"
+    },
+    {
+        "id": 46,
+        "name": "Audi",
+        "model": "Wagon",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/241316/pexels-photo-241316.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "10.34",
+        "pd": "50.45",
+        "pl": "584.70"
+    },
+    {
+        "id": 47,
+        "name": "Fiat",
+        "model": "Samurai",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "14.13",
+        "pd": "73.42",
+        "pl": "501.23"
+    },
+    {
+        "id": 48,
+        "name": "Jeep",
+        "model": "Swace",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "23.24",
+        "pd": "91.20",
+        "pl": "536.02"
+    },
+    {
+        "id": 49,
+        "name": "Mercedes-Benz",
+        "model": "Celerio",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/1035108/pexels-photo-1035108.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "25.72",
+        "pd": "82.15",
+        "pl": "676.84"
+    },
+    {
+        "id": 50,
+        "name": "Alfa Romeo",
+        "model": "Carry",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/810357/pexels-photo-810357.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "22.12",
+        "pd": "76.91",
+        "pl": "640.21"
+    },
+    {
+        "id": 51,
+        "name": "Dacia",
+        "model": "Splash",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "18.21",
+        "pd": "82.02",
+        "pl": "555.30"
+    },
+    {
+        "id": 52,
+        "name": "Cupra",
+        "model": "SJ",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "17.11",
+        "pd": "84.23",
+        "pl": "569.43"
+    },
+    {
+        "id": 53,
+        "name": "Acura",
+        "model": "Kizashi",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "21.06",
+        "pd": "52.99",
+        "pl": "645.40"
+    },
+    {
+        "id": 54,
+        "name": "ALPINA",
+        "model": "Samurai",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/1429775/pexels-photo-1429775.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "14.30",
+        "pd": "63.22",
+        "pl": "555.95"
+    },
+    {
+        "id": 55,
+        "name": "Rover",
+        "model": "Super-Carry",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "10.28",
+        "pd": "76.24",
+        "pl": "692.19"
+    },
+    {
+        "id": 56,
+        "name": "Artega",
+        "model": "Kizashi",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "12.49",
+        "pd": "89.90",
+        "pl": "533.59"
+    },
+    {
+        "id": 57,
+        "name": "BAIC",
+        "model": "Across",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "25.38",
+        "pd": "67.41",
+        "pl": "633.39"
+    },
+    {
+        "id": 58,
+        "name": "Cupra",
+        "model": "Wagon",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "20.34",
+        "pd": "97.12",
+        "pl": "694.65"
+    },
+    {
+        "id": 59,
+        "name": "Rover",
+        "model": "Wagon",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "18.96",
+        "pd": "82.08",
+        "pl": "640.17"
+    },
+    {
+        "id": 60,
+        "name": "BAIC",
+        "model": "Alto",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "17.07",
+        "pd": "91.11",
+        "pl": "620.79"
+    },
+    {
+        "id": 61,
+        "name": "Mercedes-Benz",
+        "model": "Alto",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "18.19",
+        "pd": "96.14",
+        "pl": "511.78"
+    },
+    {
+        "id": 62,
+        "name": "Infiniti",
+        "model": "Carry",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "20.76",
+        "pd": "70.77",
+        "pl": "549.06"
+    },
+    {
+        "id": 63,
+        "name": "Daewoo",
+        "model": "Across",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "28.66",
+        "pd": "70.58",
+        "pl": "548.89"
+    },
+    {
+        "id": 64,
+        "name": "Austin",
+        "model": "Ignis",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/977003/pexels-photo-977003.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "15.11",
+        "pd": "97.36",
+        "pl": "587.41"
+    },
+    {
+        "id": 65,
+        "name": "Artega",
+        "model": "LJ",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "24.44",
+        "pd": "78.75",
+        "pl": "555.30"
+    },
+    {
+        "id": 66,
+        "name": "Honda",
+        "model": "Super-Carry",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "17.39",
+        "pd": "55.94",
+        "pl": "579.31"
+    },
+    {
+        "id": 67,
+        "name": "Alfa Romeo",
+        "model": "Grand Vitara",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "13.92",
+        "pd": "58.38",
+        "pl": "613.86"
+    },
+    {
+        "id": 68,
+        "name": "Buick",
+        "model": "Jimny",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/1429775/pexels-photo-1429775.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "23.53",
+        "pd": "89.23",
+        "pl": "679.11"
+    },
+    {
+        "id": 69,
+        "name": "Honda",
+        "model": "Splash",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "14.40",
+        "pd": "60.84",
+        "pl": "617.84"
+    },
+    {
+        "id": 70,
+        "name": "Iveco",
+        "model": "Kizashi",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "13.24",
+        "pd": "57.77",
+        "pl": "597.78"
+    },
+    {
+        "id": 71,
+        "name": "Aston Martin",
+        "model": "Swace",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "29.24",
+        "pd": "99.04",
+        "pl": "665.98"
+    },
+    {
+        "id": 72,
+        "name": "Buick",
+        "model": "Vitara",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/38637/car-audi-auto-automotive-38637.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "19.57",
+        "pd": "54.06",
+        "pl": "540.31"
+    },
+    {
+        "id": 73,
+        "name": "Pontiac",
+        "model": "LJ",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "23.93",
+        "pd": "93.75",
+        "pl": "672.34"
+    },
+    {
+        "id": 74,
+        "name": "Hyundai",
+        "model": "Across",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/38637/car-audi-auto-automotive-38637.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "25.20",
+        "pd": "81.72",
+        "pl": "666.46"
+    },
+    {
+        "id": 75,
+        "name": "Hyundai",
+        "model": "Swift",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "28.51",
+        "pd": "54.91",
+        "pl": "562.04"
+    },
+    {
+        "id": 76,
+        "name": "Volkswagen",
+        "model": "Celerio",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "25.71",
+        "pd": "61.49",
+        "pl": "604.67"
+    },
+    {
+        "id": 77,
+        "name": "Ford",
+        "model": "Wagon",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "22.60",
+        "pd": "69.58",
+        "pl": "568.87"
+    },
+    {
+        "id": 78,
+        "name": "Audi",
+        "model": "LJ",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "21.47",
+        "pd": "82.07",
+        "pl": "593.20"
+    },
+    {
+        "id": 79,
+        "name": "Hyundai",
+        "model": "Wagon",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "27.01",
+        "pd": "64.76",
+        "pl": "571.67"
+    },
+    {
+        "id": 80,
+        "name": "Cobra",
+        "model": "Carry",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "20.98",
+        "pd": "84.39",
+        "pl": "685.56"
+    },
+    {
+        "id": 81,
+        "name": "Porsche",
+        "model": "Swift",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "25.73",
+        "pd": "90.11",
+        "pl": "667.00"
+    },
+    {
+        "id": 82,
+        "name": "Isuzu",
+        "model": "Celerio",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "14.86",
+        "pd": "66.17",
+        "pl": "562.81"
+    },
+    {
+        "id": 83,
+        "name": "Iveco",
+        "model": "Baleno",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "27.22",
+        "pd": "82.28",
+        "pl": "626.84"
+    },
+    {
+        "id": 84,
+        "name": "Alfa Romeo",
+        "model": "Alto",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "27.16",
+        "pd": "87.58",
+        "pl": "680.50"
+    },
+    {
+        "id": 85,
+        "name": "Porsche",
+        "model": "iK-2",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "10.18",
+        "pd": "72.45",
+        "pl": "509.86"
+    },
+    {
+        "id": 86,
+        "name": "Citroën",
+        "model": "Carry",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "28.68",
+        "pd": "65.79",
+        "pl": "566.42"
+    },
+    {
+        "id": 87,
+        "name": "Ford",
+        "model": "Super-Carry",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "15.83",
+        "pd": "58.45",
+        "pl": "664.77"
+    },
+    {
+        "id": 88,
+        "name": "Austin",
+        "model": "Swace",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "14.02",
+        "pd": "91.83",
+        "pl": "639.80"
+    },
+    {
+        "id": 89,
+        "name": "Nissan",
+        "model": "Baleno",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "28.46",
+        "pd": "65.15",
+        "pl": "693.39"
+    },
+    {
+        "id": 90,
+        "name": "Isuzu",
+        "model": "Across",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "28.93",
+        "pd": "69.23",
+        "pl": "584.18"
+    },
+    {
+        "id": 91,
+        "name": "Infiniti",
+        "model": "Liana",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "28.23",
+        "pd": "54.47",
+        "pl": "649.00"
+    },
+    {
+        "id": 92,
+        "name": "Cadillac",
+        "model": "Wagon",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "19.66",
+        "pd": "73.37",
+        "pl": "659.06"
+    },
+    {
+        "id": 93,
+        "name": "Fiat",
+        "model": "Super-Carry",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "17.71",
+        "pd": "54.55",
+        "pl": "533.09"
+    },
+    {
+        "id": 94,
+        "name": "Cupra",
+        "model": "Swift",
+        "rated": 2,
+        "img": "https://images.pexels.com/photos/1429775/pexels-photo-1429775.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "11.99",
+        "pd": "51.38",
+        "pl": "555.94"
+    },
+    {
+        "id": 95,
+        "name": "Dodge",
+        "model": "Swace",
+        "rated": 1,
+        "img": "https://images.pexels.com/photos/38637/car-audi-auto-automotive-38637.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "23.96",
+        "pd": "66.84",
+        "pl": "609.14"
+    },
+    {
+        "id": 96,
+        "name": "Jeep",
+        "model": "Carry",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "21.33",
+        "pd": "62.57",
+        "pl": "650.57"
+    },
+    {
+        "id": 97,
+        "name": "Cobra",
+        "model": "Super-Carry",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/544542/pexels-photo-544542.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "10.51",
+        "pd": "61.24",
+        "pl": "551.33"
+    },
+    {
+        "id": 98,
+        "name": "Abarth",
+        "model": "SJ",
+        "rated": 0,
+        "img": "https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "14.29",
+        "pd": "80.39",
+        "pl": "562.82"
+    },
+    {
+        "id": 99,
+        "name": "Pontiac",
+        "model": "Samurai",
+        "rated": 3,
+        "img": "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "ph": "16.28",
+        "pd": "74.74",
+        "pl": "547.64"
     }
- 
-
 ]
