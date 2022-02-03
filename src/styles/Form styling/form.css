@@ -1,0 +1,47 @@
+.submit-trip {
+  width: 24rem;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(70, 187, 255);
+}
+
+.submit-trip div {
+  margin-top: 20px;
+}
+
+.pickup-time {
+  display: flex;
+}
+
+input {
+    margin-right: 30px;
+    font-size: 0.8rem;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid rgb(127, 206, 252);
+    border-radius: 5px;
+    color: white;
+}
+
+
+::placeholder {
+    color:whitesmoke;
+    font-size: 0.8rem;
+   
+  }
+
+
+
+label {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: whitesmoke;
+}
+
+.button {
+    padding: 20px;
+}

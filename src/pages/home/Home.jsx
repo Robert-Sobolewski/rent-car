@@ -1,14 +1,22 @@
-
 import React from 'react';
 import data from '../../data/data.json'
+import SubmitTrip from '../../components/Home-components/SubmitTrip';
 
 const Home = () => {
 
-  console.log(data);
-  return <div>
-      <h1>Home page</h1>
-      <p>Hello poeple !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
-      <p>HELLO FROM ISMAIL</p>
+  return <div className='home-container'>
+
+    <div className='main-pic'>
+    </div>
+    <SubmitTrip />
+
+
+    <div className='cont'>
+    <h1>alohadsddddddddddddddddddddddddd</h1>
+    <p>agdsgsdgdsgs</p>
+    </div>
+
+     
   </div>;
 };
 
