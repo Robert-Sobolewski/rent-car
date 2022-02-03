@@ -22,7 +22,8 @@
 small {
     margin-top:3rem;
     color: blue;
-    letter-spacing:.2rem
+    letter-spacing:.2rem;
+    margin-bottom:1rem;
 }
 
 .section1 h1 {
@@ -47,4 +48,32 @@ small {
     display: grid;
     place-content: center center;
     margin-bottom:1rem;
+}
+
+.section1 .serviceIcon {
+    color: #fff;
+    font-size:2.5rem;
+  
+}
+
+
+/** SECTION 2*/
+
+.section2 {
+    background: url('https://media.istockphoto.com/photos/car-saleswoman-showing-to-male-customer-car-performance-on-tablet-picture-id1284963732?b=1&k=20&m=1284963732&s=170667a&w=0&h=7oDiUA49dM5b8c1elWiN1n4fg0_tATkm4td_axgPx28=') ;
+    background-repeat: no-repeat;
+    background-position: -20px -180px;
+    background-size: cover;   
+    height:400px;   
+    margin-top:5rem;
+    z-index: 0;
+}
+
+.section2 .left {
+
+    clip-path: polygon(0 0, 51% 0, 30% 100%, 0% 100%);
+    background-color:#5FD38F;
+    z-index: 1;
+    width:1200px;
+    height:100%;
 }
