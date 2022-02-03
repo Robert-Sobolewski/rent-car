@@ -13,6 +13,7 @@ import Cars from "./pages/cars/Cars";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 
+
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      
+     
     </div>
   );
 }
