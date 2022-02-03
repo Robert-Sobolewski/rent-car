@@ -1,0 +1,31 @@
+[
+    {
+        "id":"0",
+        "make":"VW",
+        "model":"Golf",
+        "year":"2019",
+        "style":"sedan",
+        "img":"./img1.jpeg"
+
+    },
+    {
+        "id":"0",
+        "make":"Porsche",
+        "model":"Cayenne",
+        "year":"2020",
+        "style":"SUV",
+        "img":"./img2.jpeg"
+
+    },
+    {
+        "id":"0",
+        "make":"Mercedes",
+        "model":"E320",
+        "year":"2008",
+        "style":"sedan",
+        "img":"./img3.jpeg"
+
+    }
+ 
+
+]
