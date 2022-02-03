@@ -9,6 +9,7 @@ import Navigation from "./components/navbar/Navbar";
 import Services from "./pages/services/Services";
 
 import Demo from "./pages/demo/Demo";
+import Pricing from "./pages/pricing/Pricing";
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/demo" element={<Demo />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
