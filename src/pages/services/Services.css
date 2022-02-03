@@ -13,7 +13,7 @@
 .main-img {
     width: 100%;
     height: 600px;
-    background-image: url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8b2ZmaWNlJTIwbWFuYWdlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-image: url("../../images/service3.jpeg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -60,10 +60,12 @@ small {
 /** SECTION 2*/
 
 .section2 {
-    background: url('https://media.istockphoto.com/photos/car-saleswoman-showing-to-male-customer-car-performance-on-tablet-picture-id1284963732?b=1&k=20&m=1284963732&s=170667a&w=0&h=7oDiUA49dM5b8c1elWiN1n4fg0_tATkm4td_axgPx28=') ;
+    position: relative;
+    background: url('../../images/service5.jpeg') ;
     background-repeat: no-repeat;
-    background-position: -20px -180px;
-    background-size: cover;   
+    background-position:center;
+    background-size: cover;  
+    width: 100%;
     height:400px;   
     margin-top:5rem;
     z-index: 0;
@@ -76,4 +78,19 @@ small {
     z-index: 1;
     width:1200px;
     height:100%;
+}
+
+.section2 .right {
+    width:30%;
+    position: absolute;
+    top: 30%;
+    right: 25%;
+}
+
+.section2 h2 {
+    color: #fff;
+    font-size:40px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 3rem;
 }

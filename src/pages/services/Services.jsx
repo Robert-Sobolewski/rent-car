@@ -62,8 +62,10 @@ const Services = () => {
 
       <section className="section2">
         <div className="left"></div>
+        <div className="right">
         <h2>Do You Want To Earn With Us? So Don't Be Late.</h2>
-        <Button></Button>
+        <Button className="btn btn-primary">Become A Driver</Button>
+        </div>
       </section>
     </>
   );
