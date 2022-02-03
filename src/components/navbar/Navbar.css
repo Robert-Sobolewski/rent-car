@@ -1,0 +1,7 @@
+.navbar{
+    /* position: sticky;
+    position: -webkit-sticky; 
+    top: 100px;*/
+     border: solid 4px red;
+    background: gray; /**/
+}

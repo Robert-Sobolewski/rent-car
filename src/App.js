@@ -8,8 +8,10 @@ import Navigation from "./components/navbar/Navbar";
 
 import Services from "./pages/services/Services";
 
-import Demo from "./pages/demo/Demo";
 import Pricing from "./pages/pricing/Pricing";
+import Cars from "./components/cars/Cars";
+import Blog from "./components/blog/Blog";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/pricing" element={<Pricing />} />
-        <Route path="/demo" element={<Demo />} />
+        <Route path="/cars" element={<Cars />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

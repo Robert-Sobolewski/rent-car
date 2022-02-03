@@ -44,7 +44,7 @@ const Demo = () => {
   return <div className="demo">
       <Container className="d-flex flex-wrap align-content-space-around justify-content-space-around"> 
         {
-          data.map(item =>
+          data?.map(item =>
             renderCard(item)
           )
         }
