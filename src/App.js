@@ -9,9 +9,9 @@ import Navigation from "./components/navbar/Navbar";
 import Services from "./pages/services/Services";
 
 import Pricing from "./pages/pricing/Pricing";
-import Cars from "./components/cars/Cars";
-import Blog from "./components/blog/Blog";
-import Contact from "./components/contact/Contact";
+import Cars from "./pages/cars/Cars";
+import Blog from "./pages/blog/Blog";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   return (
