@@ -1,5 +1,32 @@
 .navbar {
-    display: flex;
-    
+  display: flex;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  font-weight: 300;
+}
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 80rem;
+  margin: 0 auto;
+}
+
+.menu-bar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: rgb(138, 206, 138);
 }

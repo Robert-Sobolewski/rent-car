@@ -9,8 +9,10 @@ export default function Navigation() {
 
   return (
     <div className="navbar">
+        <div className="nav-container">
+
         <h3>Rent Car</h3>
-        <div>
+        <div className="menu-bar">
             <ul>
                 <Link to="/"><li>Home</li></Link>
                 <Link to="/about"><li>About</li></Link>
@@ -21,6 +23,9 @@ export default function Navigation() {
                 <Link to="/contact"><li>Contact</li></Link>
          
             </ul>
+        </div>
+
+
         </div>
      
     </div>
