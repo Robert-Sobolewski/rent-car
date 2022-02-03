@@ -6,8 +6,10 @@ import "./Services.css";
 const Services = () => {
   return (
     <>
-      <section>
+      <section className="section section1">
+      <div className="main-img"></div>
         <Container className="servicesContainer">
+          
           <small>SERVICES</small>
           <h1>Our Latest Services</h1>
           <div className="row services container-fluid">
