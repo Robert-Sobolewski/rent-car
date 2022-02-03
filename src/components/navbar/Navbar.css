@@ -2,6 +2,14 @@
     /* position: sticky;
     position: -webkit-sticky; 
     top: 100px;*/
-     border: solid 4px red;
-    background: gray; /**/
+    color: black;
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow:  23px 23px 47px #d9d9d9,
+                 -23px -23px 47px #ffffff;
+
+}
+.navbar ul a li {
+    color: black;
+    font-weight: bold;
 }
