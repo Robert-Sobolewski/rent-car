@@ -12,6 +12,7 @@ import Pricing from "./pages/pricing/Pricing";
 import Cars from "./pages/cars/Cars";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
       
      
     </div>
