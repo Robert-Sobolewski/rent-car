@@ -2,7 +2,7 @@
    
 }
 
-.servicesContainer {
+.section1 .servicesContainer {
     display: flex;
     flex-direction: column;
    
@@ -10,7 +10,7 @@
    
 
 }
-.main-img {
+.section1 .main-img {
     width: 100%;
     height: 600px;
     background-image: url("../../images/service3.jpeg");
@@ -19,7 +19,7 @@
     background-position: center;
 
 }
-small {
+.section1 small {
     margin-top:3rem;
     color: blue;
     letter-spacing:.2rem;
