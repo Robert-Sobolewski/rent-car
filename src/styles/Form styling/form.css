@@ -1,3 +1,7 @@
+h4 {
+    color: whitesmoke;
+}
+
 .submit-trip {
   width: 24rem;
   padding: 20px;
@@ -16,32 +20,65 @@
 }
 
 input {
-    margin-right: 30px;
-    font-size: 0.8rem;
-    padding: 5px;
-    border: none;
-    background-color: transparent;
-    border: 1px solid rgb(127, 206, 252);
-    border-radius: 5px;
-    color: white;
+  margin-right: 30px;
+  font-size: 0.8rem;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid rgb(127, 206, 252);
+  border-radius: 5px;
+  color: white;
 }
 
 
+#large-input {
+    width: 100%;
+}
+
 ::placeholder {
-    color:whitesmoke;
-    font-size: 0.8rem;
-   
-  }
-
-
+  color: whitesmoke;
+  font-size: 0.8rem;
+}
 
 label {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: whitesmoke;
 }
 
 .button {
-    padding: 20px;
+  padding: 20px;
 }
+
+
+
+
+/* RESERVE */
+
+
+.reserve-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    min-height: 30vh;
+    background-color: yellow;
+}
+
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.icons-container div {
+    margin: 30px;
+
+}
+
+/* 
+.circle {
+
+} */
