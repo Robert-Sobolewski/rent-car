@@ -1,26 +1,29 @@
 import React from "react";
-import "./main.css"
-import { Link } from "react-router-dom";
 
+
+
+
+import { NavLink } from "react-router-dom";
+import './Navbar.css'
 
 export default function Navigation() {
 
 
 
   return (
-    <div className="navbar">
+    <div className="navbar sticky-top">
         <div className="nav-container">
 
-        <h3>Rent Car</h3>
+        <h3><span className="text-black">Rent</span><span className="text-success">Car</span> </h3>
         <div className="menu-bar">
             <ul>
-                <Link to="/"><li>Home</li></Link>
-                <Link to="/about"><li>About</li></Link>
-                <Link to="/services"><li>Services</li></Link>
-                <Link to="/pricing"><li>Pricing</li></Link>
-                <Link to="/cars"><li>Cars</li></Link>
-                <Link to="/blog"><li>Blog</li></Link>
-                <Link to="/contact"><li>Contact</li></Link>
+                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/"><li>Home</li></NavLink>
+                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/about"><li>About</li></NavLink>
+                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/services"><li>Services</li></NavLink>
+                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/pricing"><li>Pricing</li></NavLink>
+                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/cars"><li>Cars</li></NavLink>
+                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/blog"><li>Blog</li></NavLink>
+                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/contact"><li>Contact</li></NavLink>
          
             </ul>
         </div>
