@@ -19,6 +19,7 @@ const Contact = () => {
           Contact
         </Link>
       </Breadcrumbs>
+      <h1 className="my-3 ms-5">Contact Us</h1>
       <Container className="my-5 d-flex">
         <Col className="" md={4}>
           <Row>
