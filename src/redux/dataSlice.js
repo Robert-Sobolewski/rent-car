@@ -11,6 +11,8 @@ reducers:{
 }
 });
 
+
+
 export default dataSlice.reducer;
 export const {} = dataSlice.actions;
 export const selectData = state => state.data.value

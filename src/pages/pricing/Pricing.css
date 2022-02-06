@@ -36,8 +36,6 @@
 
 
 
-
-
 /**ROW HEADER*/
 .price-container .row-header .row-one-col {
     width: 100px;
@@ -90,10 +88,6 @@
     align-items: center;
   }
 
-  .price-container .overlay-button {
-
-  }
-
   .price-container .row-two-col3:hover .overlay {
     opacity: 1;
   }
@@ -112,8 +106,3 @@
 
 
 
-/** HOVER */
-
-.price-hover {
-    background-color: #01D28E;
-}
