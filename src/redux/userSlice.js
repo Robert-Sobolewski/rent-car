@@ -22,4 +22,4 @@ reducers:{
 
 export default userSlice.reducer;
 export const {login, logout} = userSlice.actions;
-export const selectUser = state => state.data.value
+export const selectUser = state => state.user.value
