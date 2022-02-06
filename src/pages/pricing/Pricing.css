@@ -19,10 +19,12 @@
     align-items: center;
     justify-content: center;
     margin: .1rem; 
+    box-shadow: 0px 1px 0px whitesmoke;
 }
 
-.price-container .row .col h3 {
-    color: black;
+.price-container .row .row-col h3 {
+   color: #1089FF;
+   font-weight: normal;
 }
 
 .price-container .row-col h4 {
@@ -30,9 +32,9 @@
        font-weight: normal;
 }
 
-.price-container .row-col span {
+/* .price-container .row-col span {
     color: #01D28E;
-}
+} */
 
 
 
@@ -48,7 +50,7 @@
 }
 
 .price-container .row-header-col1 {
-    background-color: #1088ffd7;
+    background-color: #1089FF;
 }
 
 .price-container .row-header-col2 {
@@ -98,6 +100,16 @@
     opacity: 1;
   }
   
+
+  /** RATING ICONS */
+
+  .price-container .ratingOn {
+    color: #01D28E;
+}
+
+.price-container.ratingOff {
+    color: lightgray;
+}
 
 
 
