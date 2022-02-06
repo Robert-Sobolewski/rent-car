@@ -29,9 +29,9 @@ const CarCard = (props) => {
       
       
       <Stack direction="row" spacing={2}>
-        <p>Price/hour: <strong>{item.ph}</strong></p>
-        <p>Price/day: <strong>{item.pd}</strong></p>
-        <p>Price/month: <strong>{item.pl}</strong></p>
+        <p>Price/hour: <strong className="text-primary">{item.ph} $</strong></p>
+        <p>Price/day: <strong className="text-primary">{item.pd} $</strong></p>
+        <p>Price/month: <strong className="text-primary">{item.pl} $</strong></p>
       </Stack>
       </CardContent>
       <CardActions className="d-flex justify-content-around">
