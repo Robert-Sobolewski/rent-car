@@ -16,7 +16,7 @@ const PaginationComp = (props) => {
   const curPageChange = (event, value) => setCurPage(parseInt(value));
   const itemPageChange = (e) => {
     setCurPage(1);
-    setItemPage(e.target.value);
+    setItemPage(parseInt(e.target.value));
   };
 
   return (
