@@ -1,0 +1,16 @@
+.home-container .home-form {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -200px;
+   
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}

@@ -58,12 +58,17 @@ label {
 
 
 .reserve-container {
-    padding: 40px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     width: 700px;
-    min-height: 30vh;
-    background-color: yellow;
+    height: 400px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+.reserve-container p {
+  font-weight: 500;
 }
 
 
@@ -78,7 +83,25 @@ label {
 
 }
 
-/* 
-.circle {
 
-} */
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: tomato; */
+  border: 1px solid rgb(175, 175, 175);
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+
+}
+
+.icon {
+  font-size: 4rem;
+  color: blue;
+}
+
+
+.mt-3 {
+  width: 200px;
+}
