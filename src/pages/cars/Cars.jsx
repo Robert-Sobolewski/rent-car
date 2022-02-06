@@ -1,6 +1,6 @@
 
 import { Breadcrumbs } from '@mui/material';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -12,6 +12,9 @@ import './Cars.css'
 
 const Cars = () => {
   const data = useSelector(selectData)
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
   return <div className="cars">
      <div className="top-img"></div>
       <Breadcrumbs className="bread d-flex mt-8" aria-label="breadcrumb">

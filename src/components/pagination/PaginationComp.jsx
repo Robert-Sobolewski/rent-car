@@ -13,7 +13,9 @@ const PaginationComp = (props) => {
   const [curPage, setCurPage] = useState(1);
   const WrapComponent = props.comp;
 
-  const curPageChange = (event, value) => setCurPage(parseInt(value));
+  const curPageChange = (event, value) => {setCurPage(parseInt(value));
+  window.scrollTo(0,0);
+  }
   const itemPageChange = (e) => {
     setCurPage(1);
     setItemPage(parseInt(e.target.value));

@@ -1,0 +1,15 @@
+.detail-prop{
+    
+    display:flex;
+    width: auto;
+    align-items:center;
+    justify-content:center;
+}
+.detail-prop .desc{
+    display:flex;
+    flex-direction:column;
+}
+
+.detail-prop .icon{
+    font-size: 55px;
+}
