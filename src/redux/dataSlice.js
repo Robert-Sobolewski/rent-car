@@ -14,6 +14,8 @@ reducers:{
 }
 });
 
+
+
 export default dataSlice.reducer;
 export const {find} = dataSlice.actions;
 export const selectData = state => state.data.value
