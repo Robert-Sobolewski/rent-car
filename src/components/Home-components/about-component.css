@@ -25,16 +25,21 @@
 
 
 .content-about {
-    background-color: tomato;
-    width: 50rem;
-    margin-left: 100px;
+    /* background-color: tomato; */
+    width: 45rem;
+    margin-left: 120px;
 }
 
 
 
 .image {
     width: 500px;
-    position: absolute;
-    left: 350px;
+    position: relative;
+    left: 40%;
 }
 
+
+
+.about-us {
+    font-size: 0.85rem;
+}

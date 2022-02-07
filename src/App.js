@@ -6,7 +6,7 @@ import NotFound from "./pages/notFound/NotFound";
 import Navigation from "./components/navbar/Navbar";
 
 import Services from "./pages/services/Services";
-
+import Demo from "./pages/demo/Demo";
 import Pricing from "./pages/pricing/Pricing";
 import Cars from "./pages/cars/Cars";
 import Contact from "./pages/contact/Contact";
@@ -19,8 +19,9 @@ function App() {
     <div className="App">
       <Navigation />
       <Routes>
-        
         <Route path="/" element={<Home />} />
+        <Route path="/demo" element={<Demo />} />
+
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/pricing" element={<Pricing />} />
