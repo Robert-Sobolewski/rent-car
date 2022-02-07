@@ -1,0 +1,40 @@
+
+/* carbook */
+
+
+.car-book {
+    display: flex;
+}
+
+
+.car-book .box1 {
+    padding: 50px;
+    width: 40%;
+    height: 40rem;
+    /* background-color: turquoise; */
+}
+
+
+.car-book .box2 {
+    width: 60%;
+    height: 40rem;
+    background-color: #5fd38f;
+    color: white;
+    padding: 50px;
+}
+
+
+.content-about {
+    background-color: tomato;
+    width: 50rem;
+    margin-left: 100px;
+}
+
+
+
+.image {
+    width: 500px;
+    position: absolute;
+    left: 350px;
+}
+

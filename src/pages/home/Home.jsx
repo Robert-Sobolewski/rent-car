@@ -2,8 +2,8 @@ import React from "react";
 import data from "../../data/data.json";
 import SubmitTrip from "../../components/Home-components/SubmitTrip";
 import Reserve from "../../components/Home-components/Reserve";
-import { Container, Col, Row } from "react-bootstrap";
 import "./home.css";
+import About from "../../components/Home-components/About";
 
 const Home = () => {
   return (
@@ -19,6 +19,9 @@ const Home = () => {
         <p>What we offer</p>
         <h1>Our Vehicles</h1>
       </div>
+      <About />
+
+   
     </div>
   );
 };

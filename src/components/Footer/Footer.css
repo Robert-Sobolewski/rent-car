@@ -26,9 +26,9 @@
 }
 
 .footer {
-  display: inline-block;
+  /* display: inline-block; */
     position: relative;
-    left: 0;
+    /* left: 0; */
     bottom: 0;
     width: 100%;
     background-color: black;

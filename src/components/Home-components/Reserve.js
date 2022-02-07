@@ -11,28 +11,36 @@ export default function Reserve() {
         <h2>Better Way to Rent Your Perfect Cars</h2>
 
         <div className="icons-container">
-
           <div>
-              <div className="circle"></div>
-            <MapIcon />
+            <div className="circle">
+              <MapIcon className="icon" fontSize="large" />
+            </div>
+
             <p>Choose Your Pickup Location</p>
           </div>
           <div>
-          <div className="circle"></div>
-            <GiShakingHands />
+            <div className="circle">
+              <GiShakingHands className="icon" />
+            </div>
+
             <p>Select the Best Deal</p>
           </div>
           <div>
-          <div className="circle"></div>
-            <CarRentalIcon />
-            <p>Reserve Your Rental Car</p>
+            <div className="circle">
+              <CarRentalIcon className="icon" fontSize="large" />
+            </div>
+
+            <p>Reserve Your Car</p>
           </div>
         </div>
-      </div>
+
 
       <Button className="mt-3" variant="contained">
         Rent A Car now
       </Button>
+
+      </div>
+
     </>
   );
 }

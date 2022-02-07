@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
@@ -13,6 +12,7 @@ import Cars from "./pages/cars/Cars";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import Footer from './components/Footer/Footer'
+import Details from "./pages/details/Details";
 
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/cars" element={<Cars />} />
+        <Route path="/details/:id" element={<Details/>} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
