@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Container } from "react-bootstrap";
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import "./Pricing.css";
 import { useSelector } from "react-redux";
 import { selectData } from "../../redux/dataSlice";
@@ -14,7 +14,14 @@ const Pricing = () => {
   return (
     <div className="price-container">
       <div className="main-img"></div>
-      <Container>
+      <Container className="mt-5  ">
+        <Row className="row-header">
+          <Col className="row-one-col row-header-col"></Col>
+          <Col className="row-one-col row-header-col"></Col>
+          <Col className="row-one-col row-header-col1">Per Hour Rate</Col>
+          <Col className="row-one-col row-header-col2">Per Date Rate</Col>
+          <Col className="row-one-col row-header-col3">Leasing</Col>
+        </Row>
         <PaginationComp data={data} comp={PriceCard} />
       </Container>
     </div>

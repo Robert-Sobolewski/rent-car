@@ -28,7 +28,7 @@ const PriceCard = (props) => {
             <span className={(item.rated <= 3) ? ('ratingOff') : 'ratingOn'}>
               <GradeIcon />
             </span>
-            <span className={(item.rated <= 4) ? ('ratingOff') : 'ratinratingOngOff'}>
+            <span className={(item.rated <= 4) ? ('ratingOff') : 'ratingOn'}>
               <GradeIcon />
             </span>
           </p>
