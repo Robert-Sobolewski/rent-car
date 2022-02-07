@@ -4,7 +4,7 @@ import SubmitTrip from "../../components/Home-components/SubmitTrip";
 import Reserve from "../../components/Home-components/Reserve";
 import "./home.css";
 import AboutComponent from "../../components/Home-components/AboutComponent";
-import CarouselComponent from "../../components/Home-components/CarouselComponent";
+
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       <div className="offer">
         <p>What we offer</p>
         <h1>Our Vehicles</h1>
-        <CarouselComponent />
+   
       </div>
       <AboutComponent />
 
