@@ -1,15 +1,38 @@
-.navbar{
-    /* position: sticky;
+.navbar {
+  /* position: sticky;
     position: -webkit-sticky; 
     top: 100px;*/
-    color: black;
-    border-radius: 0px;
-    background: #ffffff;
-    box-shadow:  23px 23px 47px #d9d9d9,
-                 -23px -23px 47px #ffffff;
-
+  color: black;
+  border-radius: 0px;
+  background: #ffffff;
+  box-shadow: 23px 23px 47px #d9d9d9, -23px -23px 47px #ffffff;
 }
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 80rem;
+  margin: 0 auto;
+}
+
+
+
+a {
+    text-decoration: none;
+  
+  }
+
+.menu-bar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  margin-right: 30px;
+}
+
 .navbar ul a li {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }

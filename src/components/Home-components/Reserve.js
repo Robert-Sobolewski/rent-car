@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import MapIcon from "@mui/icons-material/Map";
 import { GiShakingHands } from "react-icons/gi";
 import CarRentalIcon from "@mui/icons-material/CarRental";
+import "../../styles/Form styling/form.css"
 
 export default function Reserve() {
   return (
@@ -36,7 +37,7 @@ export default function Reserve() {
 
 
       <Button className="mt-3" variant="contained">
-        Rent A Car now
+        Reserve your car now
       </Button>
 
       </div>
