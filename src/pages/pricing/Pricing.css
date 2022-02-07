@@ -121,6 +121,15 @@
 }
 
 
+/** SELECT MARKEN */
+
+
+.price-container .markenSelect {
+    width: 100%;
+    display: flex;justify-content: center;
+}
+
+
 
 
 
