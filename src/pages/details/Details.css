@@ -16,3 +16,9 @@
     font-size: 1.5rem;
     
 }
+
+.details-comp ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}

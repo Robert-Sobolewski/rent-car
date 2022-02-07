@@ -8,6 +8,9 @@ import PaginationComp from "../../components/pagination/PaginationComp";
 
 const Pricing = () => {
   const data = useSelector(selectData);
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   return (
     <div className="price-container">
       <div className="main-img"></div>
