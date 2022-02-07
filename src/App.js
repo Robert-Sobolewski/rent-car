@@ -12,6 +12,7 @@ import Cars from "./pages/cars/Cars";
 import Contact from "./pages/contact/Contact";
 import Footer from './components/Footer/Footer'
 import Details from "./pages/details/Details";
+import Login from "./pages/login/Login"
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/cars" element={<Cars />} />
         <Route path="/details/:id" element={<Details/>} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
