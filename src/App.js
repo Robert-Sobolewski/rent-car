@@ -9,7 +9,6 @@ import Services from "./pages/services/Services";
 
 import Pricing from "./pages/pricing/Pricing";
 import Cars from "./pages/cars/Cars";
-import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import Footer from './components/Footer/Footer'
 import Details from "./pages/details/Details";
@@ -27,7 +26,6 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/cars" element={<Cars />} />
         <Route path="/details/:id" element={<Details/>} />
-        <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -1,17 +1,20 @@
 
 
-import { Breadcrumbs, Stack } from '@mui/material';
+import { Breadcrumbs, Button, Stack } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Tab, Tabs } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import DetailProp from '../../components/detail-prop/DetailProp';
 import { currentCar, find } from '../../redux/dataSlice';
 import {BsSpeedometer} from 'react-icons/bs'
 import {GrManual} from 'react-icons/gr'
 import {GiCarSeat} from 'react-icons/gi'
 import {GiCarDoor} from 'react-icons/gi'
+import {AiOutlineCheck, AiOutlineClose } from 'react-icons/ai'
 import LocalGasStationTwoToneIcon from '@mui/icons-material/LocalGasStationTwoTone';
+import AUTO from '../../data/types'
+import axios from 'axios'
 import './Details.css'
 const Details = (props) => {
 
@@ -19,9 +22,19 @@ const Details = (props) => {
     const dispatch = useDispatch();
     const curCar = useSelector(currentCar)[0]
     const[car,setCar] = useState(null);
+    const [ tabKey, setTabKey] = useState("features")
+    const [desc,setDesc] = useState("")
+    const navigate = useNavigate();
+    const genDesc= async (par) =>{
+      await axios.get(`http://metaphorpsum.com/paragraphs/${par}`)
+      .then(resp => setDesc(resp.data))
+      .error( error=> alert(error))
+    }
 
     useEffect(()=>{
+      genDesc(Math.floor(1+Math.random()*10))
        id&& setCar(dispatch(find(id)))
+       window.scrollTo(0,0);
     },[])
   return <div className="details-comp">
       <div className="top-img"></div>
@@ -59,18 +72,46 @@ const Details = (props) => {
            <DetailProp icon={LocalGasStationTwoToneIcon} title="Fuel" desc={curCar.fuel.toString()[0].toUpperCase()+curCar.fuel.toString().slice(1)}/>
           </Col>
         </Row>
+        <Tabs
+        id="features-tabs"
+        activeKey={tabKey}
+        defaultActiveKey="features"
+        onSelect={(k)=> setTabKey(k)}
+        className="my-3">
+          <Tab eventKey="features" title={"Features"}>
+              <ul>
+              {
 
-        {/* <Row>
-            <Stack spacing={2} direction="row">
-              <DetailProp icon={<BsSpeedometer/>} title={"Mileage"} desc={"10000"}/>
-              <DetailProp icon={<BsSpeedometer />} title={"Mileage"} desc={"10000"}/>
-              <DetailProp icon={<BsSpeedometer />} title={"Mileage"} desc={"10000"}/>
-            </Stack>
-        </Row> */}
+                Object.entries(curCar.features).map((item, ind)=>{
+                  return(
+                  <Col md={{span: 3}}>
+                  <li key={ind} className="my-3">
+                  {
+                    curCar.features[item[0]]=== true?(<AiOutlineCheck size={30} className='text-success' />): (<AiOutlineClose size={30} className='text-danger' />)
+                    }
+                    <span className="ms-3"><strong>{AUTO['features'][item[0]]}</strong> </span>
+                    </li></Col>)
+                })
+              }</ul>
+          </Tab>
+          <Tab eventKey="description" title={"Description"}>
+          {
+           desc && desc.split('\n').map((item, index)=>(
+              <p key={index}>{item}</p>
+            ))
+          }
+          </Tab>
+          
+        </Tabs>
 
-          <p>
-            {JSON.stringify(curCar)}
-          </p>
+        <Row className="my-4">
+          <Col md={{offset:9, span:2}}>
+          <Button
+          onClick={() => navigate('/pricing')}
+          variant="contained" size="normal" color="primary">Order now</Button>
+          </Col>
+        </Row>
+
       </Container>
   </div>;
 };
