@@ -20,6 +20,7 @@ export default function Navigation() {
                 <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/pricing"><li>Pricing</li></NavLink>
                 <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/cars"><li>Cars</li></NavLink>
                 <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/contact"><li>Contact</li></NavLink>
+                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/demo"><li>Demo</li></NavLink>
          
             </ul>
         </div>
