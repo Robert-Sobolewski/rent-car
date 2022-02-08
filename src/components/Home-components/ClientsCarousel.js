@@ -4,6 +4,9 @@ import ItemCard from "./Item";
 import "./client-carousel.css";
 
 import image1 from "../../images/avatars/1.png";
+import image2 from "../../images/avatars/2.png";
+import image3 from "../../images/avatars/3.png";
+import image4 from "../../images/avatars/4.png";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -13,10 +16,11 @@ const breakPoints = [
 ];
 
 export default function ClientsCarousel() {
+  console.log(image1)
   const items = [
     {
       id: 1,
-      img: "../../images/avatars/1.png",
+      img: {image1},
       comment:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
       name: "John Connor",
@@ -24,7 +28,7 @@ export default function ClientsCarousel() {
     },
     {
       id: 2,
-      img: "../../images/avatars/1.png",
+      img: {image2},
       comment:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
       name: "Tom Holland",
@@ -32,7 +36,7 @@ export default function ClientsCarousel() {
     },
     {
       id: 3,
-      img: "../../images/avatars/2.png",
+      img: {image3},
       comment:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
       name: "David Olsen",
@@ -40,7 +44,7 @@ export default function ClientsCarousel() {
     },
     {
       id: 4,
-      img: "../../images/avatars/3.png",
+      img: {image4},
       comment:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
       name: "Sigfrid Nome",
@@ -48,7 +52,7 @@ export default function ClientsCarousel() {
     },
     {
       id: 5,
-      img: "../../images/avatars/2.png",
+      img: {image1},
       comment:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
       name: "Matt Lenon",
@@ -56,7 +60,7 @@ export default function ClientsCarousel() {
     },
     {
       id: 6,
-      img: "../../images/avatars/4.png",
+      img: {image2},
       comment:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
       name: "Sarah Parker",
@@ -64,7 +68,7 @@ export default function ClientsCarousel() {
     },
     {
       id: 7,
-      img: "../../images/avatars/2.png",
+      img: {image3},
       comment:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
       name: "Abdul Hasan",
@@ -83,10 +87,11 @@ export default function ClientsCarousel() {
 
       <div className="carousel-wrapper">
         <Carousel breakPoints={breakPoints}>
-          {items.map((item) => (
+          {items.map((item, index) => (
             <ItemCard key={item.id}>
               <div className="image">
-                <img src={item.img} alt="" />
+                <img src={[image1,image2,image3,image4,image1,image4][index]} alt="" />
+                {console.log(item.img)}
               </div>
               <p className="p-grey">{item.comment}</p>
               <p className="p-name">{item.name}</p>
