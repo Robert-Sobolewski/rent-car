@@ -7,6 +7,10 @@ import AboutComponent from "../../components/Home-components/AboutComponent";
 import { Container, Button } from "react-bootstrap";
 import AirIcon from "@mui/icons-material/Air";
 import "../services/Services.css";
+import CarouselComponent from "../../components/Home-components/CarouselComponent";
+
+import ClientsCarousel from "../../components/Home-components/ClientsCarousel";
+
 
 const Home = () => {
   return (
@@ -19,8 +23,11 @@ const Home = () => {
       </div>
 
       <div className="offer">
-        <p>What we offer</p>
+        <p className="p-blue">What we offer</p>
         <h1>Our Vehicles</h1>
+        <CarouselComponent />
+
+
       </div>
       <AboutComponent />
 
@@ -80,9 +87,16 @@ const Home = () => {
         <div className="left"></div>
         <div className="right">
           <h2>Do You Want To Earn With Us? So Don't Be Late.</h2>
+      
           <Button className="btn btn-primary">Become A Driver</Button>
+    
+
+         
         </div>
       </section>
+
+     
+      <ClientsCarousel />
     </div>
   );
 };

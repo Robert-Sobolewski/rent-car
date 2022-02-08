@@ -1,0 +1,41 @@
+
+
+
+.carousel-wrapper {
+    padding: 60px 300px;
+  
+  background-color: rgb(241, 241, 241);
+}
+
+
+
+
+.client-container .p-blue {
+    text-transform: uppercase;
+    letter-spacing:.2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1587fa;
+}
+
+.image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-color: hotpink; */
+}
+
+
+
+.p-grey {
+  color: grey;
+}
+
+.p-blue {
+  color: #1587fa;
+}
+
+.p-name {
+  font-weight: 600;
+  font-size: 1.3rem;
+}

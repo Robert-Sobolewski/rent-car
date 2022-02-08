@@ -2,13 +2,14 @@ import React from "react";
 import "./about-component.css";
 import Button from "@mui/material/Button";
 import image from "../../images/woman-key.jpg";
+import { Link } from "react-router-dom";
 
 export default function AboutComponent() {
   return (
     <div className="about-container">
       <div className="car-book">
         <div className="box1">
-          <img className="image" src={image} alt="Logo" />
+          <img className="image-about" src={image} alt="Logo" />
         </div>
         <div className="box2">
           <div className="content-about">
@@ -32,7 +33,6 @@ export default function AboutComponent() {
               perspiciatis consequuntur iste officia illum
             </p>
             <p>
-            
               sequi neque magnam ipsum ipsa. Odio impedit illo culpa placeat cum
               fuga officiis aliquam earum veritatis sapiente. Animi
               voluptatibus, magni illum mollitia cumque blanditiis, voluptatum
@@ -40,10 +40,11 @@ export default function AboutComponent() {
               exercitationem qui quaerat. Dignissimos cupiditate repellendus a
               porro maiores necessitatibus molestias consectetur voluptatibus?
             </p>
-
-            <Button className="mt-3" variant="contained">
-              Search Vehicle
-            </Button>
+            <Link to="/cars">
+              <Button className="mt-3" variant="contained">
+                Search Vehicle
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -25,12 +25,14 @@
   margin-left: 120px;
 }
 
-.image {
+.image-about {
   width: 80%;
   position: relative;
   left: 40%;
 }
 
 .about-us {
-  font-size: 0.85rem;
+    letter-spacing:.2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
 }

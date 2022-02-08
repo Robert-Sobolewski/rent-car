@@ -21,7 +21,9 @@
 }
 .section1 small {
     margin-top:3rem;
-    color: blue;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1587fa;
     letter-spacing:.2rem;
     margin-bottom:1rem;
 }

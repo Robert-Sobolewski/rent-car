@@ -9,7 +9,7 @@ h4 {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(70, 187, 255);
+  background-color: #1587fa;
 }
 
 .submit-trip div {
@@ -99,7 +99,7 @@ label {
 
 .icon {
   font-size: 4rem;
-  color: blue;
+  color: #1587fa;
 
 }
 

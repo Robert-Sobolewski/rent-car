@@ -8,11 +8,20 @@
 }
 
 .offer {
+    margin-top: -100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     
+}
+
+ .offer .p-blue {
+    text-transform: uppercase;
+    letter-spacing:.2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1587fa;
 }
 
 
