@@ -21,6 +21,9 @@ export default function Navigation() {
                 <NavLink  activeClassName="active" to="/cars"><li>Cars</li></NavLink>
                 <NavLink  activeClassName="active" to="/contact"><li>Contact</li></NavLink>
                 <NavLink  activeClassName="active" to="/login"><li>Login</li></NavLink>
+         
+               
+         
             </ul>
         </div>
 

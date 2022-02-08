@@ -1,31 +1,28 @@
-.contact{
-
-
+.contact {
 }
-.contact .top-img{
-    background: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1774&q=80') no-repeat;
-    height: 600px;
-    width: 100%!important;
-    position: relative;
-    background-position:center;
-    object-fit: cover;
-}
-.contact .bread{
-    position: absolute;
-    top: 28rem;
-    left: 2em;
-    font-size: 1.5rem;
-    
+.contact .top-img {
+  background: url("../../images/serv7.webp");
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 200 100;
 }
 
-.contact .contact-form{
-    background:#F8F9FA;
+.top-img .bread {
+  position: absolute;
+  top: 500px;
+  left: 200px;
 }
-.contact .contact-form label{
-    color: #555;
+
+.contact .contact-form {
+  background: #f8f9fa;
+}
+.contact .contact-form label {
+  color: #555;
 }
 
 .contact .contact-form input,
-.contact .contact-form textarea{
-    border: solid 1px black;
+.contact .contact-form textarea {
+  border: solid 1px black;
 }

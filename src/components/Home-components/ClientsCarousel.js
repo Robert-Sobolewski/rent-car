@@ -90,7 +90,7 @@ export default function ClientsCarousel() {
           {items.map((item, index) => (
             <ItemCard key={item.id}>
               <div className="image">
-                <img src={[image1,image2,image3,image4,image1,image4][index]} alt="" />
+                <img src={[image1,image2,image3,image4,image1,image4, image1][index]} alt="" />
                 {console.log(item.img)}
               </div>
               <p className="p-grey">{item.comment}</p>
