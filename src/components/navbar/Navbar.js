@@ -22,19 +22,7 @@ export default function Navigation() {
                 <NavLink  activeClassName="active" to="/contact"><li>Contact</li></NavLink>
                 <NavLink  activeClassName="active" to="/login"><li>Login</li></NavLink>
          
-                {/* <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/"><li>Home</li></NavLink> */}
-                {/* <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/about"><li>About</li></NavLink>
-                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/services"><li>Services</li></NavLink>
-                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/pricing"><li>Pricing</li></NavLink>
-                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/cars"><li>Cars</li></NavLink>
-                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/contact"><li>Contact</li></NavLink>
-<<<<<<< HEAD
-                {/* <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/demo"><li>Demo</li></NavLink> */}
-                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/login"><li>Login</li></NavLink>
-=======
-                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/demo"><li>Demo</li></NavLink>
-                <NavLink className={({isActive})=>isActive? 'text-success': undefined} to="/login"><li>Login</li></NavLink> */}
->>>>>>> d09475d82a5bff5f464ee6e70474b9ad90d4133d
+               
          
             </ul>
         </div>
