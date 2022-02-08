@@ -1,5 +1,5 @@
 .price-container {  
-   margin-top:100px;
+   
    
 }
 /** MAIN IMG UNDER THE NAVBAR*/
@@ -8,8 +8,7 @@
     height: 600px;
     background-image: url("../../images/serv7.webp");
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position: 200 100;
+    background-size:cover;   
 }
 
 /** ROWS GENEERAL */
