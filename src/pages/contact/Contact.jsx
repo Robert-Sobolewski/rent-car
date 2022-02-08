@@ -12,11 +12,11 @@ const Contact = () => {
     <div className="contact">
       <div className="top-img">
       <Breadcrumbs className="bread d-flex mt-8" aria-label="breadcrumb">
-          <Link className="text-uppercase" to="/">
+          <Link className="text-uppercase boldtext" to="/">
             Home
           </Link>
           <Typography className="text-uppercase" color="text.primary">
-            About
+            Contact
           </Typography>
         </Breadcrumbs>
       </div>

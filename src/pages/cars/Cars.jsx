@@ -18,11 +18,11 @@ const Cars = () => {
   return <div className="cars">
      <div className="top-img">
      <Breadcrumbs className="bread d-flex mt-8" aria-label="breadcrumb">
-          <Link className="text-uppercase" to="/">
+          <Link className="text-uppercase boldtext shadow" to="/">
             Home
           </Link>
           <Typography className="text-uppercase" color="text.primary">
-            About
+            Cars
           </Typography>
         </Breadcrumbs>
      </div>
