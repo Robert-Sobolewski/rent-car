@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Card, Col, Container, Form, Image, Row } from "react-bootstrap";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
+import {Breadcrumbs, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import PhoneAndroidOutlinedIcon from "@mui/icons-material/PhoneAndroidOutlined";
@@ -10,15 +10,17 @@ import Gmap from "../../components/gmap/Gmap";
 const Contact = () => {
   return (
     <div className="contact">
-      <div className="top-img"></div>
+      <div className="top-img">
       <Breadcrumbs className="bread d-flex mt-8" aria-label="breadcrumb">
-        <Link className="text-uppercase" to="/">
-          Home
-        </Link>
-        <Link className="text-uppercase" to="/contact">
-          Contact
-        </Link>
-      </Breadcrumbs>
+          <Link className="text-uppercase" to="/">
+            Home
+          </Link>
+          <Typography className="text-uppercase" color="text.primary">
+            About
+          </Typography>
+        </Breadcrumbs>
+      </div>
+ 
       <h1 className="my-3 ms-5">Contact Us</h1>
       <Container className="my-5 d-flex">
         <Col className="" md={4}>

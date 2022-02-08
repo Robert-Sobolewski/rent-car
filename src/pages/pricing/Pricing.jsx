@@ -5,6 +5,8 @@ import { useSelector } from "react-redux";
 import { selectData } from "../../redux/dataSlice";
 import PriceCard from "../../components/Price-Card/PriceCard";
 import PaginationComp from "../../components/pagination/PaginationComp";
+import { Link } from "react-router-dom";
+import { Breadcrumbs, Typography } from "@mui/material";
 
 const Pricing = () => {
   const data = useSelector(selectData);
@@ -16,7 +18,16 @@ const Pricing = () => {
     <div className="price-container">    
 
   
-      <div className="main-img"></div>
+      <div className="main-img">
+      <Breadcrumbs className="bread d-flex mt-8" aria-label="breadcrumb">
+          <Link className="text-uppercase" to="/">
+            Home
+          </Link>
+          <Typography className="text-uppercase" color="text.primary">
+            Pricing
+          </Typography>
+        </Breadcrumbs>
+      </div>
       <Container className="mt-5  ">
         <Row className="row-header">
           <Col className="row-one-col row-header-col"></Col>

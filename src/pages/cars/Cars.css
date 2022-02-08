@@ -1,17 +1,18 @@
-.cars{}
-
-.cars .top-img{
-    background: url('https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') no-repeat;
-    height: 600px;
-    width: 100%;
-    position: relative;
-    background-position:center;
-    object-fit: cover;
+.cars {
 }
-.cars .bread{
-    position: absolute;
-    top: 28rem;
-    left: 2em;
-    font-size: 1.5rem;
-    
+
+.cars .top-img {
+  background: url("https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+    no-repeat;
+  height: 600px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.top-img .bread {
+  position: absolute;
+  top: 500px;
+  left: 200px;
 }

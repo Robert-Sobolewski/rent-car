@@ -1,5 +1,5 @@
 
-import { Breadcrumbs } from '@mui/material';
+import { Breadcrumbs,Typography } from '@mui/material';
 import React, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
@@ -16,15 +16,17 @@ const Cars = () => {
     window.scrollTo(0,0);
   },[])
   return <div className="cars">
-     <div className="top-img"></div>
-      <Breadcrumbs className="bread d-flex mt-8" aria-label="breadcrumb">
-        <Link className="text-uppercase" to="/">
-          Home
-        </Link>
-        <Link className="text-uppercase" to="/cars">
-          Cars
-        </Link>
-      </Breadcrumbs>
+     <div className="top-img">
+     <Breadcrumbs className="bread d-flex mt-8" aria-label="breadcrumb">
+          <Link className="text-uppercase" to="/">
+            Home
+          </Link>
+          <Typography className="text-uppercase" color="text.primary">
+            About
+          </Typography>
+        </Breadcrumbs>
+     </div>
+     
       <h1 className="my-3 ms-5">Choose Your Car</h1>
       <Container className="my-5">
       <PaginationComp data={data} comp={CarCard } />
