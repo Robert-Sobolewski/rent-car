@@ -1,31 +1,29 @@
-
-
-
 .carousel-wrapper {
-    padding: 60px 300px;
-  
-  background-color: rgb(241, 241, 241);
+  padding: 60px 300px;
 }
 
-
-
+.client-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
 .client-container .p-blue {
-    text-transform: uppercase;
-    letter-spacing:.2rem;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #1587fa;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #1587fa;
 }
 
 .image img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    /* background-color: hotpink; */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* background-color: hotpink; */
 }
-
-
 
 .p-grey {
   color: grey;

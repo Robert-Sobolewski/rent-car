@@ -1,7 +1,7 @@
 .navbar {
   /* position: sticky;
     position: -webkit-sticky; 
-    top: 100px;*/
+    top: 100px; */
   color: black;
   border-radius: 0px;
   background: #ffffff;
@@ -18,10 +18,12 @@
 
 
 
+a:active {
+  color: red;
+}
 a {
-    text-decoration: none;
-  
-  }
+  text-decoration: none;
+}
 
 .menu-bar ul {
   list-style-type: none;
