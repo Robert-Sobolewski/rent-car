@@ -18,12 +18,14 @@
 
 
 
-a:active {
-  color: red;
-}
+
 a {
-  text-decoration: none;
-}
+    text-decoration: none;
+  
+  }
+  .navbar .active li{
+    color: green;
+  }
 
 .menu-bar ul {
   list-style-type: none;
