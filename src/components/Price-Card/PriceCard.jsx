@@ -1,9 +1,18 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import GradeIcon from "@mui/icons-material/Grade";
+import { useNavigate } from "react-router-dom";
 
 const PriceCard = (props) => {
   const item = props.item; 
+  const navigate = useNavigate();
+
+  const handleButtonBook = (e) => {
+    e.preventDefault();
+    navigate('/book')
+
+  }
+
 
   return (
     <Container>
@@ -44,7 +53,7 @@ const PriceCard = (props) => {
             <h6 className="fw-light ">$3/hour fuel surcharges</h6>
           </div>
           <div className="overlay ">
-            <button className="overlay-button btn btn-primary ">
+            <button onClick={handleButtonBook} className="overlay-button btn btn-primary ">
               Rent A Car
             </button>
           </div>
@@ -60,7 +69,7 @@ const PriceCard = (props) => {
             <h6 className="fw-light">$3/hour fuel surcharges</h6>
           </div>
           <div className="overlay ">
-            <button className="overlay-button btn btn-primary ">
+            <button onClick={handleButtonBook} className="overlay-button btn btn-primary ">
               Rent A Car
             </button>
           </div>
@@ -76,7 +85,7 @@ const PriceCard = (props) => {
             <h6 className="fw-light">$3/hour fuel surcharges</h6>
           </div>
           <div className="overlay ">
-            <button className="overlay-button btn btn-primary ">
+            <button onClick={handleButtonBook} className="overlay-button btn btn-primary ">
               Rent A Car
             </button>
           </div>
