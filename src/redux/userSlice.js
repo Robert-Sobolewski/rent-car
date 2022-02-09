@@ -43,6 +43,8 @@ reducers:{
     },
     getCar:(state,action) => {
         state.car_id= action.payload
+    }
+        ,
     setEmail: (state,action)=>{
         state.email=action.payload;
     },
@@ -51,14 +53,13 @@ reducers:{
     }
 
 
-}
+
 });
 
 
 
 export default userSlice.reducer;
-export const {login, logout,setPickLoc, setDropLoc,setPickDate,setDropDate, setTime, getCar } = userSlice.actions;
-export const {login, logout,setPickLoc, setDropLoc,setPickDate,setDropDate,setEmail,setPassword } = userSlice.actions;
+export const {login, logout,setPickLoc, setDropLoc,setPickDate,setDropDate,setEmail,setPassword, setTime, getCar } = userSlice.actions;
 export const selectUser = state => state.user.value
 export const selectPicLoc = state => state.user.pick_location
 export const selectDropLoc = state => state.user.drop_location
