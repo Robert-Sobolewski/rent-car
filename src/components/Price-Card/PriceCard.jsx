@@ -9,7 +9,7 @@ const PriceCard = (props) => {
 
   const handleButtonBook = (e) => {
     e.preventDefault();
-    navigate('/book')
+    navigate('/demo')
 
   }
 

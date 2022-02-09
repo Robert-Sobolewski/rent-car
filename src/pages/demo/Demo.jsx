@@ -19,11 +19,11 @@ const Demo = () => {
   return (
     <div className="demo">
 
-      <h1>OUR PICK LOC IS : {location}</h1>
-      <h1>OUR DROP LOC IS : {dropLocation}</h1>
-      <h1>OUR PICK DATE IS : {pickDate}</h1>
-      <h1>OUR DROP DATE IS : {dropDate}</h1>
-      <h1>Our pick up time {pickTime}</h1>
+      <h1>Your pick up location : {location}</h1>
+      <h1>Your drp off location : {dropLocation}</h1>
+      <h1>Your pick up date : {pickDate}</h1>
+      <h1>Your drp off date : {dropDate}</h1>
+      <h1>Your pick up time {pickTime}</h1>
 
 
     </div>
