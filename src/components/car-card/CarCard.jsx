@@ -4,7 +4,7 @@ import { Button, Card, CardActions, CardContent, CardMedia, Stack, Typography } 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from "react-redux";
-import { getCar, setId } from '../../redux/userSlice';
+import { getCar, setId, setPriceH, setPriceD, setPriceM  } from '../../redux/userSlice';
 
 const CarCard = (props) => {
   
@@ -16,15 +16,16 @@ const CarCard = (props) => {
     }
 
     const dispatch = useDispatch();
-    const [car,setCar] = useState(item)
+ 
+
 
 
 
     const handleForm = (e,id) =>{
 
       e.preventDefault()
-      dispatch(getCar(car))
       dispatch(setId(id))
+      navigate('/pricing')
 
     }
   return <div className="car-card">

@@ -50,7 +50,19 @@ const userSlice = createSlice({
     },
     setId: (state, action)=>{
         state.car_id = action.payload;
+    },
+
+    setPriceH:(state,action) =>{
+        state.price_h= action.payload
+    },
+    setPriceD:(state,action) =>{
+        state.price_d= action.payload
+    },
+    setPriceM:(state,action) =>{
+        state.price_m= action.payload
     }
+
+
 
 
   }
@@ -71,6 +83,9 @@ export const {
   getCar,
   setId,
   setPassword,
+  setPriceH,
+  setPriceD,
+  setPriceM
 } = userSlice.actions;
 export const selectUser = (state) => state.user.value;
 export const selectPicLoc = (state) => state.user.pick_location;
@@ -81,3 +96,7 @@ export const selectPickTime = (state) => state.user.pick_time;
 export const selectEmail = (state) => state.user.email;
 export const selectPassword = (state) => state.user.password;
 export const selectCarId = (state) => state.user.car_id
+export const selectPH = (state) => state.user.price_h
+export const selectPD = (state) => state.user.price_d
+export const selectPM = (state) => state.user.price_m
+

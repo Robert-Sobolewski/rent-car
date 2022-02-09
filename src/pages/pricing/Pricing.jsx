@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Pricing.css";
 import { useSelector } from "react-redux";
@@ -14,6 +14,13 @@ const Pricing = () => {
   useEffect(()=>{
     window.scrollTo(0,0)
   },[])
+
+
+
+  const [perHour,setPerHour] = useState(0)
+  const [perDay,setPerDay] = useState(0)
+  const [perMonth,setPerMonth] = useState(0)
+
   return (
     <div className="price-container">    
 
