@@ -1,4 +1,13 @@
 .demo {
     padding: 50px;
-
+}
+.demo h1 {
+    font-size: 1rem;
+    width: 60%;
+    height:40px;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    line-height: 40px;
+    border-radius:10px;
+    padding-right: 1rem;
 }

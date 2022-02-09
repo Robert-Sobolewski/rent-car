@@ -17,7 +17,7 @@ const Demo = () => {
   
   
   return (
-    <div className="demo">
+    <div className="demo container">
 
       <h1>Your pick up location : {location}</h1>
       <h1>Your drp off location : {dropLocation}</h1>
