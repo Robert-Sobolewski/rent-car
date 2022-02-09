@@ -39,16 +39,18 @@ const userSlice = createSlice({
     setTime: (state, action) => {
       state.pick_time = action.payload;
     },
-    getCar: (state, action) => {
-      state.car_id = action.payload;
+    getCar:(state,action) => {
+        state.car_id= action.payload
     },
-    setEmail: (state, action) => {
-      state.email = action.payload;
+    setEmail: (state,action)=>{
+        state.email=action.payload;
     },
-    setPassword: (state, action) => {
-      state.password = action.payload;
-    },
-  },
+    setPassword: (state, action)=>{
+        state.password = action.payload;
+    }
+
+  }
+
 });
 
 export default userSlice.reducer;
@@ -62,7 +64,8 @@ export const {
   setDropDate,
   setEmail,
   setTime,
-  getCar,setPassword,
+  getCar,
+  setPassword,
 } = userSlice.actions;
 export const selectUser = (state) => state.user.value;
 export const selectPicLoc = (state) => state.user.pick_location;
