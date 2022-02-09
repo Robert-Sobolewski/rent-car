@@ -5,11 +5,29 @@ import "./Login.css";
 
 export default function Login() {
   const [show, setShow] = useState(false);
+  const [name, setName] = useState();
+  const [mail, setMail] = useState();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  console.log(name);
+
+
+  const handleSubmit = () => {
+        
+  }
+
+
   return (
     <div className="login container mt-5">
-      <Form>
+      <Form onSubmit={handleSubmit}>
+
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label className="text-dark fs-4">Name</Form.Label>
+          <Form.Control type="text" placeholder="Enter name" onChange={(e) => setName(e.target.value) }/>
+         
+        </Form.Group>
+
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label className="text-dark fs-4">Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />

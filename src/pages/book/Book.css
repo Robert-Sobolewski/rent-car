@@ -1,0 +1,38 @@
+.book {
+    margin-top:100px;
+}
+
+.book {  
+   
+   
+}
+
+.book select {
+    background-color: rgba(151, 177, 92, 0.836);
+    width:150px;
+    height: 40px;
+    border-radius:5px;
+    margin:.1rem;
+}
+
+.book .left {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
