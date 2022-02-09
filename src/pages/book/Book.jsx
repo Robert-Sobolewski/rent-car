@@ -18,6 +18,8 @@ const Book = () => {
   const [currentItem, setCurrentItem] = useState();
   const [filter, setFilter] = useState([]);
 
+  console.log(Object.keys(data[0])[1])
+
   useEffect(() => {
     const temp = JSON.parse(JSON.stringify(data));    
     setFilter(temp?.filter((item) => item.name === currentItem));   
@@ -39,7 +41,7 @@ const Book = () => {
           <Filter
             category={names}
             currentItem={currentItem}
-            setCurrentItem={setCurrentItem}
+            setCurrentItem={setCurrentItem}zz
            
           />
 
