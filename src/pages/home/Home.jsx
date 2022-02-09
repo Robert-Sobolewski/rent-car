@@ -8,11 +8,12 @@ import { Container, Button } from "react-bootstrap";
 import AirIcon from "@mui/icons-material/Air";
 import "../services/Services.css";
 import CarouselComponent from "../../components/Home-components/CarouselComponent";
-
+import {useDispatch} from 'react-redux';
 import ClientsCarousel from "../../components/Home-components/ClientsCarousel";
 
 
 const Home = () => {
+  const dispatch = useDispatch();
   return (
     <div className="home-container">
       <div className="main-pic"></div>
