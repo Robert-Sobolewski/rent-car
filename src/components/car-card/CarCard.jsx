@@ -18,11 +18,6 @@ const CarCard = (props) => {
     const [car,setCar] = useState(item)
 
 
-    const handleBook = (e,id) => {
-      e.preventDefault()
-      navigate(`/pricing/${id}`)
-
-    }
 
     const handleForm = e =>{
       e.preventDefault()
