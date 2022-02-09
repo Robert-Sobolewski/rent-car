@@ -1,18 +1,33 @@
 import React, { useState } from "react";
 import "../../styles/Form styling/form.css"
 import Button from '@mui/material/Button';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import {setPickLoc} from '../../redux/userSlice'
+import {setPickLoc, setDropLoc,setPickDate,setDropDate} from '../../redux/userSlice'
+
 
 export default function SubmitTrip() {
+
+  const navigate = useNavigate()
   const dispatch = useDispatch();
   const [pickLocation,setPickLocation] = useState("")
-  const handleForm = e=>{
-    console.log('demo')
+  const [dropLocation, setDropLocation] = useState("")
+  const [pickDate, setPcDate] = useState("")
+  const [dropDate, setDrDate] = useState("")
+
+  const handleForm = e=>{    
     e.preventDefault()
     dispatch(setPickLoc(pickLocation))
+    dispatch(setDropLoc(dropLocation))
+    dispatch(setPickDate(pickDate))
+    dispatch(setDropDate(dropDate))
+    console.log('type of ', typeof dropDate, pickDate)
+    navigate('/demo')
+   
   }
+
+ 
+
   return (
     <div className="submit-trip">
       <h4>Make your trip</h4>
@@ -22,23 +37,25 @@ export default function SubmitTrip() {
       <div>
         <label htmlFor="text">Pick-up location</label><br />
         <input type="text" value={pickLocation} 
-        onChange={e => setPickLocation(e.target.value)}
+        onChange={(e) => setPickLocation(e.target.value)}
         placeholder="City, Airport, Station,etc" id="large-input" />
       </div>
       <div>
         <label htmlFor="">Drop-off location</label><br />
-        <input type="text" placeholder="City, Airport, Station, etc" id="large-input" />
+        <input type="text" value={dropLocation} 
+        onChange={(e) => setDropLocation(e.target.value)}
+        placeholder="City, Airport, Station, etc" id="large-input" />
       </div>
 
       <div className="pickup-time">
         <div>
           <label htmlFor="">Pick-up date</label><br />
-          <input type="date" />
+          <input onChange={(e) => setPcDate(e.target.value)} type="date"  />
         </div>
 
         <div>
           <label htmlFor="">Drop-off date</label><br />
-          <input type="date"  />
+          <input onChange={(e) => setDrDate(e.target.value)} type="date"  />
         </div>
       </div>
 

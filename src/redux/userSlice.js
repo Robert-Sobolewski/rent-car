@@ -25,6 +25,15 @@ reducers:{
     },
     setPickLoc : (state, action) =>{
         state.pick_location = action.payload;
+    },
+    setDropLoc : (state, action) =>{
+        state.drop_location = action.payload;
+    },
+    setPickDate : (state, action) =>{
+        state.pick_date = action.payload;
+    },
+    setDropDate : (state, action) =>{
+        state.drop_date = action.payload;
     }
 }
 });
@@ -32,5 +41,9 @@ reducers:{
 
 
 export default userSlice.reducer;
-export const {login, logout,setPickLoc} = userSlice.actions;
+export const {login, logout,setPickLoc, setDropLoc,setPickDate,setDropDate } = userSlice.actions;
 export const selectUser = state => state.user.value
+export const selectPicLoc = state => state.user.pick_location
+export const selectDropLoc = state => state.user.drop_location
+export const selectPickDate = state => state.user.pick_date
+export const selectDropDate = state => state.user.drop_date

@@ -16,7 +16,7 @@ const breakPoints = [
 ];
 
 export default function ClientsCarousel() {
-  console.log(image1)
+ 
   const items = [
     {
       id: 1,
@@ -91,7 +91,7 @@ export default function ClientsCarousel() {
             <ItemCard key={item.id}>
               <div className="image">
                 <img src={[image1,image2,image3,image4,image1,image4, image1][index]} alt="" />
-                {console.log(item.img)}
+               
               </div>
               <p className="p-grey">{item.comment}</p>
               <p className="p-name">{item.name}</p>
