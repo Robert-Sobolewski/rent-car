@@ -3,7 +3,7 @@ import "../../styles/Form styling/form.css"
 import Button from '@mui/material/Button';
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import {setPickLoc, setDropLoc,setPickDate,setDropDate} from '../../redux/userSlice'
+import {setPickLoc, setDropLoc,setPickDate,setDropDate,setTime} from '../../redux/userSlice'
 
 
 export default function SubmitTrip() {
@@ -14,6 +14,8 @@ export default function SubmitTrip() {
   const [dropLocation, setDropLocation] = useState("")
   const [pickDate, setPcDate] = useState("")
   const [dropDate, setDrDate] = useState("")
+  const [pickTime, setPickTime] = useState('')
+  
 
   const handleForm = e=>{    
     e.preventDefault()
@@ -21,8 +23,9 @@ export default function SubmitTrip() {
     dispatch(setDropLoc(dropLocation))
     dispatch(setPickDate(pickDate))
     dispatch(setDropDate(dropDate))
+    dispatch(setTime(pickTime))
     console.log('type of ', typeof dropDate, pickDate)
-    navigate('/demo')
+    navigate('/cars')
    
   }
 
@@ -61,7 +64,7 @@ export default function SubmitTrip() {
 
       <div>
           <label htmlFor="">Pick-up time</label><br />
-          <input type="time" id="large-input" />
+          <input onChange={(e) => setPickTime(e.target.value) } type="time" id="large-input" />
       </div>
       <Link to="/cars">
       <Button onClick={e=>handleForm(e)} className="mt-3" variant="contained" color="success">Rent A Car now</Button>

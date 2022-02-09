@@ -1,8 +1,10 @@
 
 
 import { Button, Card, CardActions, CardContent, CardMedia, Stack, Typography } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from "react-redux";
+import { getCar } from '../../redux/userSlice';
 
 const CarCard = (props) => {
     const navigate = useNavigate();
@@ -10,6 +12,22 @@ const CarCard = (props) => {
     const detailsClick = (e, id)=>{
       e.preventDefault();
       navigate(`/details/${id}`)
+    }
+
+    const dispatch = useDispatch();
+    const [car,setCar] = useState(item)
+
+
+    const handleBook = (e,id) => {
+      e.preventDefault()
+      navigate(`/pricing/${id}`)
+
+    }
+
+    const handleForm = e =>{
+      e.preventDefault()
+      dispatch(getCar(car))
+
     }
   return <div className="car-card">
 <Card className="m-3" key={item.id} sx={{ maxWidth: 345 }}>
@@ -36,7 +54,7 @@ const CarCard = (props) => {
       </CardContent>
       <CardActions className="d-flex justify-content-around">
       
-      <Button variant="contained" size="normal" color="primary">Book now</Button>
+      <Button onClick={(e) => handleForm(e)} variant="contained" size="normal" color="primary">Book now</Button>
       <Button variant="contained" onClick={e=> detailsClick(e,item.id)} color="success">Details</Button>
        
       </CardActions>
