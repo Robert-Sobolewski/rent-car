@@ -1,20 +1,27 @@
 import { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import ModalHeader from "react-bootstrap/esm/ModalHeader";
+import { useDispatch } from "react-redux";
+import { login, setEmail, setPassword } from "../../redux/userSlice";
 import "./Login.css";
 
 export default function Login() {
   const [show, setShow] = useState(false);
-  const [name, setName] = useState();
-  const [mail, setMail] = useState();
+  const [name, setName] = useState("");
+  const [email1, setEmail1] = useState("");
+  const [pass1, setPass1] = useState("")
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const dispatch = useDispatch();
 
-  console.log(name);
+ 
 
 
-  const handleSubmit = () => {
-        
+  const handleSubmit = (e) => {
+    e.preventDefault();
+        dispatch(login(name))
+        dispatch(setEmail(email1))
+        dispatch(setPassword(pass1))
   }
 
 
@@ -22,15 +29,15 @@ export default function Login() {
     <div className="login container mt-5">
       <Form onSubmit={handleSubmit}>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label className="text-dark fs-4">Name</Form.Label>
-          <Form.Control type="text" placeholder="Enter name" onChange={(e) => setName(e.target.value) }/>
+          <Form.Control type="text" required value={name} placeholder="Enter name" onChange={(e) => setName(e.target.value) }/>
          
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label className="text-dark fs-4">Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Control value={email1} onChange={(e) => setEmail1(e.target.value)} type="text" required placeholder="Enter email" />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
@@ -38,7 +45,7 @@ export default function Login() {
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label className="text-dark fs-4">Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+          <Form.Control value={pass1} onChange={e=> setPass1(e.target.value)} type="password" placeholder="Password" />
         </Form.Group>
         <Form.Group className="mb-3 " controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="I accept cookies &amp; conditions" />
@@ -64,7 +71,7 @@ export default function Login() {
         </ModalHeader>
         <Modal.Body>
           <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3" controlId="formBasicEmail1">
               <Form.Label className="text-dark fs-5">Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
               <Form.Text className="text-muted">
@@ -72,12 +79,12 @@ export default function Login() {
               </Form.Text>
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Group className="mb-3" controlId="formBasicPassword1">
               <Form.Label className="text-dark fs-5">Password</Form.Label>
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Group className="mb-3" controlId="formBasicPassword2">
               <Form.Label className="text-dark fs-5">Confirm Password</Form.Label>
               <Form.Control type="password" placeholder="Confirm Password" />
             </Form.Group>

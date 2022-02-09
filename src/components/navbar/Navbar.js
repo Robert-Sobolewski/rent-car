@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import './Navbar.css'
 import Avatar from '@mui/material/Avatar';
+import { useDispatch, useSelector } from "react-redux";
+import { logout, selectUser } from "../../redux/userSlice";
 
 
 
 export default function Navigation() {
+const user = useSelector(selectUser)
+const dispatch = useDispatch();
+const [cuser, setCUser] = useState("")
 
-
+useEffect(() =>{
+  setCUser(user)
+},[user])
 
   return (
     <div className="navbar sticky-top">
@@ -23,7 +30,15 @@ export default function Navigation() {
                 <NavLink  activeClassName="active" to="/cars"><li>Cars</li></NavLink>
                 <NavLink  activeClassName="active" to="/contact"><li>Contact</li></NavLink>
                 <NavLink  activeClassName="active" to="/login"><li>Login</li></NavLink>
-                <NavLink  activeClassName="active" to="/login"><li> <Avatar   sx={{ width: 24, height: 24 }}>H</Avatar></li></NavLink>
+                <a href="#" onClick={()=>dispatch(logout())} label="LOGOUT"><li>
+                  {
+                    cuser!== ""?<Avatar   sx={{ width: 24, height: 24 }}>{cuser[0].toUpperCase()}</Avatar>
+                    :
+                    null
+                  }
+                  </li>
+                    </a>
+                 
          
                
          

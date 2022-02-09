@@ -3,7 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 const userSlice = createSlice({
 name:"user",
 initialState:{
-    value:'bob',
+    value:"",
+    email:"",
+    password:"",
     pick_date: "",
     drop_date: "",
     pick_time: "",
@@ -41,6 +43,11 @@ reducers:{
     },
     getCar:(state,action) => {
         state.car_id= action.payload
+    setEmail: (state,action)=>{
+        state.email=action.payload;
+    },
+    setPassword: (state, action)=>{
+        state.password = action.payload;
     }
 
 
@@ -51,6 +58,7 @@ reducers:{
 
 export default userSlice.reducer;
 export const {login, logout,setPickLoc, setDropLoc,setPickDate,setDropDate, setTime, getCar } = userSlice.actions;
+export const {login, logout,setPickLoc, setDropLoc,setPickDate,setDropDate,setEmail,setPassword } = userSlice.actions;
 export const selectUser = state => state.user.value
 export const selectPicLoc = state => state.user.pick_location
 export const selectDropLoc = state => state.user.drop_location
@@ -58,3 +66,5 @@ export const selectPickDate = state => state.user.pick_date
 export const selectDropDate = state => state.user.drop_date
 export const selectPickTime = state => state.user.pick_time
 export const selectCar = state => state.user.car_id
+export const selectEmail = state => state.user.email
+export const selectPassword = state => state.user.password
