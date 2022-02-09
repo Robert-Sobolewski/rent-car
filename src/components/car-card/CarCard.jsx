@@ -4,9 +4,10 @@ import { Button, Card, CardActions, CardContent, CardMedia, Stack, Typography } 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from "react-redux";
-import { getCar } from '../../redux/userSlice';
+import { getCar, setId } from '../../redux/userSlice';
 
 const CarCard = (props) => {
+  
     const navigate = useNavigate();
     const item = props.item;
     const detailsClick = (e, id)=>{
@@ -19,9 +20,11 @@ const CarCard = (props) => {
 
 
 
-    const handleForm = e =>{
+    const handleForm = (e,id) =>{
+
       e.preventDefault()
       dispatch(getCar(car))
+      dispatch(setId(id))
 
     }
   return <div className="car-card">
@@ -49,7 +52,7 @@ const CarCard = (props) => {
       </CardContent>
       <CardActions className="d-flex justify-content-around">
       
-      <Button onClick={(e) => handleForm(e)} variant="contained" size="normal" color="primary">Book now</Button>
+      <Button onClick={(e) => handleForm(e,item.id)} variant="contained" size="normal" color="primary">Book now</Button>
       <Button variant="contained" onClick={e=> detailsClick(e,item.id)} color="success">Details</Button>
        
       </CardActions>

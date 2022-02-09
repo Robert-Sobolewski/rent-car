@@ -11,7 +11,7 @@ const userSlice = createSlice({
     pick_time: "",
     pick_location: "",
     drop_location: "",
-    car_id: "8",
+    car_id: 0,
     price_h: 0,
     price_d: 82.78,
     price_m: 0,
@@ -47,7 +47,11 @@ const userSlice = createSlice({
     },
     setPassword: (state, action)=>{
         state.password = action.payload;
+    },
+    setId: (state, action)=>{
+        state.car_id = action.payload;
     }
+
 
   }
 
@@ -65,6 +69,7 @@ export const {
   setEmail,
   setTime,
   getCar,
+  setId,
   setPassword,
 } = userSlice.actions;
 export const selectUser = (state) => state.user.value;
@@ -73,6 +78,6 @@ export const selectDropLoc = (state) => state.user.drop_location;
 export const selectPickDate = (state) => state.user.pick_date;
 export const selectDropDate = (state) => state.user.drop_date;
 export const selectPickTime = (state) => state.user.pick_time;
-export const selectCar = (state) => state.user.car_id;
 export const selectEmail = (state) => state.user.email;
 export const selectPassword = (state) => state.user.password;
+export const selectCarId = (state) => state.user.car_id
