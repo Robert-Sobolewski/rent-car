@@ -13,6 +13,10 @@ import ClientsCarousel from "../../components/Home-components/ClientsCarousel";
 
 
 const Home = () => {
+
+  
+
+
   return (
     <div className="home-container">
       <div className="main-pic"></div>

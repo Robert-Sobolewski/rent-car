@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import './Navbar.css'
+import Avatar from '@mui/material/Avatar';
 
 
 export default function Navigation() {
@@ -21,6 +22,7 @@ export default function Navigation() {
                 <NavLink  activeClassName="active" to="/cars"><li>Cars</li></NavLink>
                 <NavLink  activeClassName="active" to="/contact"><li>Contact</li></NavLink>
                 <NavLink  activeClassName="active" to="/login"><li>Login</li></NavLink>
+                <NavLink  activeClassName="active" to="/login"><li> <Avatar  sx={{ width: 24, height: 24 }}>H</Avatar></li></NavLink>
          
                
          
