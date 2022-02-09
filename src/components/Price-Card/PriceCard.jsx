@@ -1,16 +1,26 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import GradeIcon from "@mui/icons-material/Grade";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {setId} from '../../redux/userSlice'
+
 
 const PriceCard = (props) => {
   const item = props.item; 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const [carId, setCarId] = useState()
+
+  useEffect(() => {
+      setCarId(item.id)
+  }, [])
 
   const handleButtonBook = (e) => {
     e.preventDefault();
-    navigate('/demo')
+    dispatch(setId(carId));
 
+    navigate('/demo')
   }
 
 

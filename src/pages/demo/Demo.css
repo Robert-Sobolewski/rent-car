@@ -1,5 +1,10 @@
-.demo {
-    padding: 50px;
+.demoContainer {
+   background-color: orange;
+   display: flex;
+}
+.demoContainer h6 {
+    color: white;
+    margin-left: 1.5rem;
 }
 .demo h1 {
     font-size: 1rem;
@@ -10,4 +15,21 @@
     line-height: 40px;
     border-radius:10px;
     padding-left: 1rem;
+}
+.demo .demo-car-container {
+   
+    width: 1000px;
+    height:600px;
+    padding: 2rem;
+}
+
+.demo h2, h3{
+    color: white;   
+}
+
+.demo .carDetails {
+    text-shadow: 1px 1px 1px white
+    1px 1px 1px white
+    1px 1px 1px white
+    1px 1px 1px white;
 }
