@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import ModalHeader from "react-bootstrap/esm/ModalHeader";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { login, setEmail, setPassword } from "../../redux/userSlice";
 import "./Login.css";
 
@@ -13,6 +14,12 @@ export default function Login() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  // register part
+  const [regemail, setRegEmail] = useState("")
+  const [regpass, setRegPass] = useState("")
+  const [regname, setRegName] = useState("")
 
  
 
@@ -22,6 +29,8 @@ export default function Login() {
         dispatch(login(name))
         dispatch(setEmail(email1))
         dispatch(setPassword(pass1))
+        
+        navigate('/demo')
   }
 
 
@@ -65,6 +74,10 @@ export default function Login() {
         </p>
       </Form>
 
+
+      {/* const [regemail, setRegEmail] = useState("")
+  const [regpass, setRegPass] = useState("") */}
+  
       <Modal show={show} onHide={handleClose}>
         <ModalHeader closeButton>
           <Modal.Title>REGISTER</Modal.Title>
@@ -73,7 +86,7 @@ export default function Login() {
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail1">
               <Form.Label className="text-dark fs-5">Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control value={regemail} onChange={e=>setRegEmail(e.target.value)} type="email" placeholder="Enter email" />
               <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
@@ -81,7 +94,7 @@ export default function Login() {
 
             <Form.Group className="mb-3" controlId="formBasicPassword1">
               <Form.Label className="text-dark fs-5">Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control value={regpass} onChange={e=>setRegEmail(e.target.value)} type="password" placeholder="Password" />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword2">
