@@ -51,12 +51,10 @@ reducers:{
     setPassword: (state, action)=>{
         state.password = action.payload;
     }
+}
 
 
-
-});
-
-
+})
 
 export default userSlice.reducer;
 export const {login, logout,setPickLoc, setDropLoc,setPickDate,setDropDate,setEmail,setPassword, setTime, getCar } = userSlice.actions;
