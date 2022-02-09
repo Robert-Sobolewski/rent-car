@@ -22,7 +22,7 @@ export default function ClientsCarousel() {
       id: 1,
       img: {image1},
       comment:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestro rerum sunt architecto deleniti?",
       name: "John Connor",
       job: "Interface Designer",
     },
@@ -30,7 +30,7 @@ export default function ClientsCarousel() {
       id: 2,
       img: {image2},
       comment:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
+        "Lorem, ipsum dolor sit amet cea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
       name: "Tom Holland",
       job: "UX Designer",
     },
@@ -38,7 +38,7 @@ export default function ClientsCarousel() {
       id: 3,
       img: {image3},
       comment:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, mlibero rerum sunt architecto deleniti?",
       name: "David Olsen",
       job: "Interface Designer",
     },
@@ -46,7 +46,7 @@ export default function ClientsCarousel() {
       id: 4,
       img: {image4},
       comment:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molero rerum sunt architecto deleniti?",
       name: "Sigfrid Nome",
       job: "UI Designer",
     },
@@ -54,7 +54,7 @@ export default function ClientsCarousel() {
       id: 5,
       img: {image1},
       comment:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, moleinus libero rerum sunt architecto deleniti?",
       name: "Matt Lenon",
       job: "Marketing Manager",
     },
@@ -62,7 +62,7 @@ export default function ClientsCarousel() {
       id: 6,
       img: {image2},
       comment:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae libero rerum sunt architecto deleniti?",
       name: "Sarah Parker",
       job: "Web Developer",
     },
@@ -70,7 +70,7 @@ export default function ClientsCarousel() {
       id: 7,
       img: {image3},
       comment:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. Ut explicabo amet minus libero rerum sunt architecto deleniti?",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laudantium ab eaque ea sint adipisci aliquam eius quae, molestiae necessitatibus sit. ",
       name: "Abdul Hasan",
       job: "Interface Designer",
     },
